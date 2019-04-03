@@ -3,7 +3,5 @@
   else if (typeof context['define'] != 'undefined' && context['define'] == 'function' && context['define']['amd']) define(name, definition)
   else context[name] = definition()
 })('$script', function () {
-	function foo() {
-		bar(); // ReferenceError: bar is not a function
-	}
+	var a = c.b;
 }, this);
